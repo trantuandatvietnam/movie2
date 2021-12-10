@@ -1,0 +1,44 @@
+@use './scss/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: $text-color;
+  font-family: $font-family;
+  background: $bg-color;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 56px;
+  padding-top: calc($header-height + 48px);
+}
